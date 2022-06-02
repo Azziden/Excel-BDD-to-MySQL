@@ -1,4 +1,6 @@
 <?php
+include "vendor/autoload.php";
+
 include("csv.php");
 
 $csv = new csv();

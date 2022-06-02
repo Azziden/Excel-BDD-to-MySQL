@@ -1,0 +1,17 @@
+{
+    "name": "azziden/script-csv-construct",
+    "autoload": {
+        "psr-4": {
+            "Azziden\\ScriptCsvConstruct\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Azziden",
+            "email": "azzide.rif@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.23"
+    }
+}
