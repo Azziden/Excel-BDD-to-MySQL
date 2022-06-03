@@ -6,7 +6,7 @@ class csv
 
     function __construct()
     {
-        $this->db = new PDO("mysql:host=localhost;port=3308;dbname=trycvs;charset=utf8","root","Nasusmid80");
+        $this->db = new PDO("mysql:host=localhost;dbname=(Put_db_name);charset=utf8","root","");
     }
 
     public function import($file)
@@ -25,24 +25,18 @@ class csv
                 }
 
                 $data[] = [
-                    $sheetData[$i][0] === 'Détail' ? 'DETAIL' : 'DETAIL', // type
-                    $sheetData[$i][1], // numero
-                    $sheetData[$i][2], // intitule de la section
-                    $sheetData[$i][3] === '' ? null : $sheetData[$i][3], // date fin
-                    $sheetData[$i][4] === '' ? null : $sheetData[$i][4], // date debut
-                    $sheetData[$i][5] === 'Proposition' ? 'PROPOSITION' : 'PROPOSITION', // statut
-                    $sheetData[$i][7], // affectation
-                    $sheetData[$i][8], // mois analy
-                    $sheetData[$i][9], // titre
-                    $sheetData[$i][10], // 01_07_2021
-                    $sheetData[$i][11] // 30_06_2022
+                    $sheetData[$i][0] === 'DETAIL' ? 'DETAIL' : 'DETAIL', // type
+                    $sheetData[$i][1], // column 2
+                    $sheetData[$i][2], // column 3
+                    $sheetData[$i][3] === '' ? null : $sheetData[$i][3], // column 4 if can be null
+                    
                 ];
             }
                 
             $chunked = array_chunk($data, 30);
 
             for($i = 0; $i < count($chunked); $i++) {
-                $sql = "INSERT INTO `magazine` (`id`, `type`, `numero`, `intitule_de_la_section`, `date_de_fin`, `date_de_debut`, `statut`, `affectation`, `mois_analy`, `titre`, `01_07_2021`, `30_06_2022`)
+                $sql = "INSERT INTO `magazine` (`id`, `type`, `numero`, `intitule_de_la_section`, `date`)
                 VALUES";
 
                 for ($j=0; $j < count($chunked[$i]); $j++) { 
