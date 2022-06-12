@@ -40,7 +40,7 @@ class csv
                 VALUES";
 
                 for ($j=0; $j < count($chunked[$i]); $j++) { 
-                    $sql .= " (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                    $sql .= " (NULL, ?, ?, ?, ?)";
 
                     if ($j != count($chunked[$i]) - 1) {
                         $sql .= ",";
