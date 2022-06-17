@@ -25,7 +25,7 @@ class csv
                 }
 
                 $data[] = [
-                    $sheetData[$i][0] === 'DETAIL' ? 'DETAIL' : 'DETAIL', // type
+                    $sheetData[$i][0], // type
                     $sheetData[$i][1], // column 2
                     $sheetData[$i][2], // column 3
                     $sheetData[$i][3] === '' ? null : $sheetData[$i][3], // column 4 if can be null
