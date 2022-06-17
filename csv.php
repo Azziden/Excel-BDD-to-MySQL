@@ -6,7 +6,7 @@ class csv
 
     function __construct()
     {
-        $this->db = new PDO("mysql:host=localhost;dbname=(Put_db_name);charset=utf8","root","");
+        $this->db = new PDO("mysql:host=localhost;dbname=dbname="put_db_name_without_quotation_marks";charset=utf8","root","");
     }
 
     public function import($file)
