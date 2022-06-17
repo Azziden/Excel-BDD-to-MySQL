@@ -36,7 +36,7 @@ class csv
             $chunked = array_chunk($data, 30);
 
             for($i = 0; $i < count($chunked); $i++) {
-                $sql = "INSERT INTO `magazine` (`id`, `type`, `something`, `something`, `date`)
+                $sql = "INSERT INTO `magazine` (`id`, `something`, `something`, `something`, `something`)
                 VALUES";
 
                 for ($j=0; $j < count($chunked[$i]); $j++) { 
