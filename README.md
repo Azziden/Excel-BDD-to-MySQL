@@ -10,7 +10,7 @@ A MySQL database and a web server that supports PHP are also required.
 
 ## Configuration
 
-To use this script, you need to edit the following line in the csv.php file and replace put_db_name_without_quotation_marks with the name of the database you want to import the data to:
+To use this script, you need to edit the following line in the csv.php file and replace **put_db_name_without_quotation_marks** with the name of the database you want to import the data to:
 
 $this->db = new PDO("mysql:host=localhost;dbname=put_db_name_without_quotation_marks;charset=utf8","root","");
 
