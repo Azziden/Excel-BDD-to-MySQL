@@ -4,7 +4,7 @@ This PHP script allows importing data from a CSV file to a MySQL database. The C
 
 ## Requirements
 
-This script uses the ** PhpSpreadsheet ** library to read XLSX files. To use this library, you must have PHP 7.2 or higher installed, along with the php_zip and php_xml extensions.
+This script uses the **PhpSpreadsheet** library to read XLSX files. To use this library, you must have PHP 7.2 or higher installed, along with the php_zip and php_xml extensions.
 
 A MySQL database and a web server that supports PHP are also required.
 
