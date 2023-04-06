@@ -28,4 +28,3 @@ To use this script, place the csv.php and index.php files in the root directory 
 - If a cell in the XLSX file is empty and represents a value that should be inserted into the database, a NULL value will be inserted instead.
 - The data will be inserted into the magazine table of the specified database. If you want to change this, you need to edit the SQL query in the csv.php file.
 
-**Note**: This file is written in markdown format (.md) and can be viewed using any text editor that supports markdown, or can be rendered to HTML for better viewing.
