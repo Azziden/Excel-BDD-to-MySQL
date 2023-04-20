@@ -4,13 +4,13 @@ This PHP script allows importing data from a CSV file to a MySQL database. The C
 
 ## Requirements
 
-This project uses the **PhpSpreadsheet** library to read XLSX files. To use this library, you must have PHP 7.2 or higher installed, along with the php_zip and php_xml extensions.
+This script uses the **PhpSpreadsheet** library to read XLSX files. To use this library, you must have PHP 7.2 or higher installed, along with the php_zip and php_xml extensions.
 
 A MySQL database and a web server that supports PHP are also required.
 
 ## Configuration
 
-To use this project, you need to edit the following line in the csv.php file and replace **put_db_name_without_quotation_marks** with the name of the database you want to import the data to:
+To use this script, you need to edit the following line in the csv.php file and replace **put_db_name_without_quotation_marks** with the name of the database you want to import the data to:
 
 $this->db = new PDO("mysql:host=localhost;dbname=put_db_name_without_quotation_marks;charset=utf8","root","");
 
