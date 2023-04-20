@@ -1,6 +1,6 @@
 # Excel-BDD-to-MySQL
 
-This PHP project allows importing data from a CSV file to a MySQL database. The CSV file must be in XLSX format and must contain data in the first sheet of the file. The first row will be skipped as it is expected to contain column headers.
+This PHP script allows importing data from a CSV file to a MySQL database. The CSV file must be in XLSX format and must contain data in the first sheet of the file. The first row will be skipped as it is expected to contain column headers.
 
 ## Requirements
 
